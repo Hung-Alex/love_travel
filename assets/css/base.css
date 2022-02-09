@@ -1,0 +1,27 @@
+:root {
+    --text-color:#D5E2EC;
+    --white-color:#fff;
+    --text--title:#555555;
+    --font-text-normal:1.4rem;
+    --font-text-title:1.7rem;
+
+}
+* {
+    box-sizing: inherit;
+
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%; /*100%=16px => 1%=0.16 =>0.16*62.5=10px=10px => 1 rem= 10px ======>14px=1.4rem */
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin:0 auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: nowrap;
+}
