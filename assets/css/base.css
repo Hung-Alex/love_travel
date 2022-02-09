@@ -1,5 +1,5 @@
 :root {
-    --text-color:#D5E2EC;
+    --text-color:#9a9ea7;
     --white-color:#fff;
     --text--title:#555555;
     --font-text-normal:1.4rem;
@@ -8,6 +8,7 @@
 }
 * {
     box-sizing: inherit;
+    letter-spacing: 1px;
 
 }
 html {
@@ -24,4 +25,7 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: nowrap;
+}
+ul {
+    list-style: none;
 }
