@@ -5,7 +5,8 @@
 }
 
 .barner {
-    
+    overflow: hidden;
+    height: 1000px;
 }
 
 .barner__img {

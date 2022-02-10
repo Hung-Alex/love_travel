@@ -87,15 +87,26 @@ header {
     min-width: 190px;
     background-color: var(--white-color);
     position: absolute;
-    top:100%;
-    left: 0;
     padding: 0;
     box-shadow: 0px 2px 5px #f1f1f1;
     
 }
 
+.header__section--one {
+    top:100%;
+    left: 0;
+    display: none;
+}
+
+.header__section--second {
+    left: calc(100% + 26px);
+    top:0;
+    display: none;
+}
+
 .section__item {
     width: 100%;
+    position: relative;
 }
 
 .section__item:hover {
@@ -111,5 +122,14 @@ header {
     padding: 15px 25px;
     border: 1px solid #f5f5f5;
     text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+.section__item--active:hover .header__section--second {
+    display: block;
+}
+
+.header-navigation__item--active:hover .header__section--one {
+    display: block;
 }
 
