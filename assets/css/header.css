@@ -161,6 +161,11 @@ header {
   top:0;
   background-color:var(--white-color);
   overflow-y: hidden;
+  border: 1px solid var(--text-color);
+  border-top: none;
+  border-right: none;
+  overflow-y: scroll;
+
 }
 
 .slide-bar__wrap {
@@ -212,34 +217,53 @@ header {
 }
 
 .tour__place {
-
+    padding: 25px;/*tam thoi sua lai sau*/
 }
 
 .tour-place__wrap {
-
+    display: flex;
+    padding: 15px;
 }
 
 .tour__img {
-
+    padding-right: 30px;
 }
 .tour__img img {
     width: 100px;
 }
 
 .tour__destions {
-
+    flex: 1;
 }
 
 .tour__place-name {
+    color:var(--text-title);
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0;
+    margin-top: 5px;
 
 }
 
 .tour__adress {
-
+    color:var(--text-color);
+    font-size: 1.5rem;
+    margin-top: 6px;
 }
-
+.tour__adress i {
+    font-size: 1.5rem;
+    margin-right: 3px;
+}
 .tour__price {
-
+    width: 100%;
+    border: none;
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+    border-radius: 50px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 5px;
+    color: var(--white-color);
+    text-transform: uppercase;
 }
 
 .tour__price--dolar {
