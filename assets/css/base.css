@@ -9,6 +9,7 @@
 * {
     box-sizing: inherit;
     letter-spacing: 1px;
+    color: inherit;
 
 }
 html {
@@ -31,4 +32,14 @@ ul {
 }
 .app {
     overflow: hidden;
+}
+.yellow-to-orange {
+
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+.orange-to-pink {
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+.violet-to-pink {
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
 }

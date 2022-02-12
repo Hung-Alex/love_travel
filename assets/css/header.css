@@ -86,7 +86,7 @@ header {
     line-height: 10px;
     padding: 3px 5px;
 }   
-.header__menu img {
+.header__menu--img {
     width: 25px;
 }
 .header__menu {
@@ -165,7 +165,12 @@ header {
   border-top: none;
   border-right: none;
   overflow-y: scroll;
+  transform: translateX(100%); 
+  transition: transform ease-in-out 0.9s;
+}
 
+.header__menu:hover .header__slide-bar {
+    transform: translateX(0%);  
 }
 
 .slide-bar__wrap {
@@ -173,7 +178,7 @@ header {
 }
 
 .slide-bar__tour {
-
+    padding: 0px 15px 0px 30px;
 }
 
 .tour__title {
@@ -181,6 +186,7 @@ header {
     align-items: center;
     flex-direction: column;
     text-transform: uppercase;
+    padding: 15px 0px;
 }
 
 .tour__title-slogan {
@@ -217,12 +223,13 @@ header {
 }
 
 .tour__place {
-    padding: 25px;/*tam thoi sua lai sau*/
+    padding: 25px 0px;/*tam thoi sua lai sau*/
 }
 
 .tour-place__wrap {
     display: flex;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .tour__img {
@@ -257,7 +264,6 @@ header {
 .tour__price {
     width: 100%;
     border: none;
-    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
     border-radius: 50px;
     font-size: 1.4rem;
     text-align: center;
@@ -270,4 +276,110 @@ header {
 
 }
 
+.tour__packages {
+    position: relative;
+}
+
+.tour__packages:hover .tour__wrap--packages-view {
+    opacity: 1;
+    z-index: 1;
+    
+}
+.tour__packages--img {
+    
+
+}
+.tour__packages--img img {
+    width: 100%;
+    
+}
+
+.tour__packages-inside {
+    position: absolute;
+    top: 0;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+    
+}
+
+.tour__information {
+        color: var(--white-color);
+        
+}
+
+.tour__packages-name {
+    font-size: 1.9rem;
+    font-weight: 900;
+    margin: 0;
+
+}
+
+.tour__packages-nums {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.tour__wrap--packages {
+    display: flex;
+    flex-direction:column;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.tour__inside--img {
+   width: 35px;
+   
+}
+
+
+.tour__wrap--packages-view {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #14b9d5;
+    align-items: center;
+    opacity: 0;
+    z-index: -8;
+    transition:background-color ease-in-out 2s ;
+}
+
+.tour-packages__title {
+    color: var(--white-color);
+    font-size: 1.9rem;
+    text-align: center;
+    
+}
+
+.tour-packages-view__adress {
+    flex: 1;
+}
+
+.tour-packages__item {
+    text-align: center;
+    font-size: 1.4rem;
+    color:var(--white-color);
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+.tour-packages__view-btn {
+    width: 100%;
+    border: none;
+    border-radius:50px ;
+    padding: 15px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #14b9d5;;
+    background-color: var(--white-color);
+    
+}
 
