@@ -165,7 +165,7 @@ header {
   border-top: none;
   border-right: none;
   overflow-y: scroll;
-  transform: translateX(100%); 
+  transform: translateX(100%);
   transition: transform ease-in-out 0.9s;
 }
 
@@ -349,7 +349,7 @@ header {
     align-items: center;
     opacity: 0;
     z-index: -8;
-    transition:background-color ease-in-out 2s ;
+    transition:opacity ease-in-out 0.9s;
 }
 
 .tour-packages__title {
