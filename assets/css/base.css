@@ -4,6 +4,7 @@
     --text-title:#555555;
     --font-text-normal:1.4rem;
     --font-text-title:1.7rem;
+    --size-img:calc(1200px / 3 * 2 );
 
 }
 * {
@@ -12,6 +13,7 @@
     color: inherit;
 
 }
+
 html {
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
@@ -64,4 +66,19 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.margin-not-row {
+    margin: 0 !important;
+}
+
+@keyframes slide {
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: -800px;
+    }
+    100%{
+        margin-left: -1600px;
+    }
 }
