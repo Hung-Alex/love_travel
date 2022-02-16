@@ -32,9 +32,18 @@ html {
 .grid__colum-3 {
     width: calc(100% / 3);
     padding: 15px;
-
 }
 
+.grid__colum-2-3 {
+    width: calc(100% / 3 * 2);
+}
+.grid__colum-6 {
+    width: calc(100% / 6);
+}
+
+.part {
+    padding: 15px 0px;
+}
 ul {
     list-style: none;
 }
@@ -50,4 +59,9 @@ ul {
 }
 .violet-to-pink {
     background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+.vc__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

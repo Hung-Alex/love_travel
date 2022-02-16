@@ -118,7 +118,7 @@
 }
 
 .section-travel {
-
+    padding-bottom: 30px ;
 }
 
 .travel__text-small {
@@ -132,6 +132,7 @@
     font-size: 3.6rem;
     color: var(--text-title);
     margin: 0;
+    margin-bottom: 3rem; ;
 }
 
 .travel__link {
@@ -173,3 +174,71 @@
     top: 0;
     left: 0;
 }    
+
+/*section-map*/
+
+.section-map {
+    padding: 50px 159.4px 50px 159.6px;
+    background-image: url("../img/content/parallax-search-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-map__title-small {
+    font-size: 4.5rem;
+    color: var(--white-color);
+    width: 100%;
+    margin: 0;
+}
+
+.section-map__title-large {
+    font-size: 5rem;
+    color: var(--white-color);
+    width: 100%;
+    margin: 0;
+}
+
+.section-map__link {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    z-index: 1;
+
+}
+
+.section-map__link::after {
+    position: absolute;
+    bottom: 7px;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #f76570;
+    z-index: -1;
+}
+
+.section-map__btn {
+    font-size: 1.4rem;
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #f76570  ;
+    border-radius: 50px;
+}
+
+/*slide-img*/
+.wrap-slide {
+    width: calc(100% / 3 * 2 );
+   
+
+}
+
+.slide__img {
+    
+}
+.slide__img img {
+    width: 100%;
+    
+}
