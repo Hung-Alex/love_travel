@@ -236,12 +236,14 @@
    
     width: 10000px;
    animation: slide 2s infinite;
+   animation-delay: 2s;
    
 }
 
 .slide__img {
     float: left;
-    
+  
+
 }
 .slide__img img {
     height: 500px;
