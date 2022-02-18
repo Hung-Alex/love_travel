@@ -71,14 +71,44 @@ ul {
     margin: 0 !important;
 }
 
-@keyframes slide {
-    0%{
-        margin-left: 0px;
+.text-left {
+    text-align: left !important;
+}
+.text-left-font {
+    font-size: 1.4rem !important;
+}
+.text-left-font-title {
+    font-size: 3.6rem !important;
+    text-transform:none !important;
+}
+.padding-vc_colum {
+
+}
+.line-center {
+    text-decoration: line-through;
+    color: var(--text-color);
+}
+.small {
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #555555;
+}
+.text_vc {
+    display: inline-block;
+}
+
+
+.btn-nav {
+    background-color: #9a9ea7;
+    height: 5px;
+    width: 80px;
+    margin: 0 5px;
+}
+@keyframes opa {
+    from {
+        opacity: 0.4;
     }
-    50%{
-        margin-left: -800px;
-    }
-    100%{
-        margin-left: -1600px;
+    to {
+        opacity: 1;
     }
 }

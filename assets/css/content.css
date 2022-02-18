@@ -229,24 +229,63 @@
 }
 
 /*slide-img*/
-.next-slide {
-    overflow: hidden;
-}
-.wrap-slide {
-   
-    width: 10000px;
-   animation: slide 2s infinite;
-   animation-delay: 2s;
-   
-}
 
-.slide__img {
-    float: left;
-  
+.section-view-price {
 
 }
-.slide__img img {
-    height: 500px;
-    width: var(--size-img);
+
+.wrap__section-view-price {
+    
+}
+
+.section-view-text {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 100;
+    line-height: 2.7rem;
+}
+.travel__price-view-map {
+    font-size: 30px;
+    margin: 35px  0;
+}
+.travel__price-view-map h6 {
+    margin:0;
+}
+
+.travel-view__btn {
+    padding: 15px 35px;
+    font-size: 14px;
+    background-color: #1bbc9b;
+    border: none;
+    border-radius: 50px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+/*slide-travel*/
+.travel-slide__show {
+    
+}
+
+.travel-slide__img {
+    width: 100%;
+    display: none;
+    animation: opa ease-in-out 1s;
+}
+
+.travel-slide__img img {
+    width: 100%;
+}
+
+.travel-slide__show {
+    position: relative;
+}
+
+.nav-travel-img {
+    position: absolute;
+    top:10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     
 }
